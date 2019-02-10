@@ -13,7 +13,8 @@ import Footer from "components/Footer/Footer.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
+// import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import HeaderLinksSocialMedia from "components/Header/HeaderLinksSocialMedia.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import Card from "components/Card/Card.jsx";
@@ -60,7 +61,7 @@ class ProfilePage extends React.Component {
         <Header
           color="transparent"
           brand="Adam Pierce"
-          rightLinks={<HeaderLinks />}
+          rightLinks={<HeaderLinksSocialMedia />}
           fixed
           changeColorOnScroll={{
             height: 200,
@@ -85,7 +86,7 @@ class ProfilePage extends React.Component {
                         <i className={"fab fa-github"} />
                       </Button>
                       <Button href={"mailto:adam.pierc3@gmail.com"} target={"_top"} justIcon link className={classes.margin5}>
-                        <i className={"fa fa-address-book github"} />
+                        <i className={"fa fa-address-book"} />
                       </Button>
                       <Button href={"https://www.linkedin.com/in/adam-pierce-ab8a4829/"} target={"_blank"} rel={"noopener noreferrer"} justIcon link className={classes.margin5}>
                         <i className={"fab fa-linkedin"} />
