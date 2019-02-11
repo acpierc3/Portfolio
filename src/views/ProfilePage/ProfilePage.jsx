@@ -4,35 +4,38 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
+// import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+// import Favorite from "@material-ui/icons/Favorite";
+import LocationCity from "@material-ui/icons/LocationCity";
+import Build from "@material-ui/icons/Build";
+
 // core components
 import Header from "components/Header/Header.jsx";
-import Footer from "components/Footer/Footer.jsx";
+import FooterClean from "components/Footer/FooterClean.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-// import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import HeaderLinksSocialMedia from "components/Header/HeaderLinksSocialMedia.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import Card from "components/Card/Card.jsx";
+import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import Badge from "components/Badge/Badge.jsx";
+import Muted from "components/Typography/Muted.jsx";
 
 import profile from "assets/img/faces/adam2.png";
-
 import studio1 from "assets/img/examples/studio-1.jpg";
-// import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
-// import studio4 from "assets/img/examples/studio-4.jpg";
-// import studio5 from "assets/img/examples/studio-5.jpg";
 import work1 from "assets/img/examples/olu-eletu.jpg";
 import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
+// import work3 from "assets/img/examples/cynthia-del-rio.jpg";
 import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
+// import work5 from "assets/img/examples/clem-onojegaw.jpg";
+import robofriends from "assets/img/examples/projects/robofriends.png";
+import burgerBuilder from "assets/img/examples/projects/burgerBuilder.png";
+import faceRecognition from "assets/img/examples/projects/faceRecognition.png";
 
 import reactImg from "assets/img/examples/logos/react.png";
 import js from "assets/img/examples/logos/js.png";
@@ -108,15 +111,17 @@ class ProfilePage extends React.Component {
                     tabs={[
                       {
                         tabButton: "Skills",
-                        tabIcon: Camera,
+                        tabIcon: Build,
                         tabContent: (
                           <div style={{overflowX: 'hidden'}}>
+                            <h4 className={classes.title}>Skills</h4>
                             <GridContainer justify="center" >
-                              <GridItem xs={3} sm={5} md={4}>
+                              <GridItem xs={7} sm={7} md={4}>
                                 <Card
-                                  background
+                                  raised
                                   style={{
-                                    backgroundColor: "#000"
+                                    backgroundColor: "#000",
+                                    width: "80%"
                                   }}
                                 >
                                 <img
@@ -126,7 +131,6 @@ class ProfilePage extends React.Component {
                                   alt="React"
                                 />
                                   <CardBody
-                                    background
                                     className={classes.cardBody}
                                   >
                                     <Badge
@@ -146,9 +150,9 @@ class ProfilePage extends React.Component {
                                   </CardBody>
                                 </Card>
                                 <Card
-                                  background
                                   style={{
-                                    backgroundColor: "#000"
+                                    backgroundColor: "#000",
+                                    width: "80%"
                                   }}
                                 >
                                 <img
@@ -158,7 +162,6 @@ class ProfilePage extends React.Component {
                                   alt="git"
                                 />
                                   <CardBody
-                                    background
                                     className={classes.cardBody}
                                   >
                                     <Badge
@@ -178,9 +181,10 @@ class ProfilePage extends React.Component {
                                   </CardBody>
                                 </Card>
                                 <Card
-                                  background
+                                  raised
                                   style={{
-                                    backgroundColor: "#000"
+                                    backgroundColor: "#000",
+                                    width: "80%"
                                   }}
                                 >
                                 <img
@@ -190,7 +194,6 @@ class ProfilePage extends React.Component {
                                   alt="CSS"
                                 />
                                   <CardBody
-                                    background
                                     className={classes.cardBody}
                                   >
                                     <Badge
@@ -210,11 +213,12 @@ class ProfilePage extends React.Component {
                                   </CardBody>
                                 </Card>
                               </GridItem>
-                              <GridItem xs={3} sm={5} md={4}>
+                              <GridItem xs={7} sm={7} md={4}>
                                 <Card
-                                  background
+                                  raised
                                   style={{
-                                    backgroundColor: "#000"
+                                    backgroundColor: "#000",
+                                    width: "80%"
                                   }}
                                 >
                                 <img
@@ -224,7 +228,6 @@ class ProfilePage extends React.Component {
                                   alt="js"
                                 />
                                   <CardBody
-                                    background
                                     className={classes.cardBody}
                                   >
                                     <Badge
@@ -244,9 +247,10 @@ class ProfilePage extends React.Component {
                                   </CardBody>
                                 </Card>
                                 <Card
-                                  background
+                                  raisd
                                   style={{
-                                    backgroundColor: "#000"
+                                    backgroundColor: "#000",
+                                    width: "80%"
                                   }}
                                 >
                                 <img
@@ -256,7 +260,6 @@ class ProfilePage extends React.Component {
                                   alt="PostgreSQL"
                                 />
                                   <CardBody
-                                    background
                                     className={classes.cardBody}
                                   >
                                     <Badge
@@ -276,9 +279,10 @@ class ProfilePage extends React.Component {
                                   </CardBody>
                                 </Card>
                                 <Card
-                                  background
+                                  raised
                                   style={{
-                                    backgroundColor: "#000"
+                                    backgroundColor: "#000",
+                                    width: "80%"
                                   }}
                                 >
                                 <img
@@ -288,7 +292,6 @@ class ProfilePage extends React.Component {
                                   alt="DeltaV"
                                 />
                                   <CardBody
-                                    background
                                     className={classes.cardBody}
                                   >
                                     <Badge
@@ -308,11 +311,12 @@ class ProfilePage extends React.Component {
                                   </CardBody>
                                 </Card>
                               </GridItem>
-                              <GridItem xs={3} sm={5} md={4}>
+                              <GridItem xs={7} sm={7} md={4}>
                                 <Card
-                                  background
+                                  raised
                                   style={{
-                                    backgroundColor: "#000"
+                                    backgroundColor: "#000",
+                                    width: "80%"
                                   }}
                                 >
                                 <img
@@ -322,7 +326,6 @@ class ProfilePage extends React.Component {
                                   alt="Node"
                                 />
                                   <CardBody
-                                    background
                                     className={classes.cardBody}
                                   >
                                     <Badge
@@ -342,9 +345,10 @@ class ProfilePage extends React.Component {
                                   </CardBody>
                                 </Card>
                                 <Card
-                                  background
+                                  raised
                                   style={{
-                                    backgroundColor: "#000"
+                                    backgroundColor: "#000",
+                                    width: "80%"
                                   }}
                                 >
                                 <img
@@ -354,7 +358,6 @@ class ProfilePage extends React.Component {
                                   alt="Redux"
                                 />
                                   <CardBody
-                                    background
                                     className={classes.cardBody}
                                   >
                                     <Badge
@@ -374,9 +377,10 @@ class ProfilePage extends React.Component {
                                   </CardBody>
                                 </Card>
                                 <Card
-                                  background
+                                  raised
                                   style={{
-                                    backgroundColor: "#000"
+                                    backgroundColor: "#000",
+                                    width: "80%"
                                   }}
                                 >
                                 <img
@@ -386,7 +390,6 @@ class ProfilePage extends React.Component {
                                   alt="HTML"
                                 />
                                   <CardBody
-                                    background
                                     className={classes.cardBody}
                                   >
                                     <Badge
@@ -416,36 +419,130 @@ class ProfilePage extends React.Component {
                         tabButton: "Projects",
                         tabIcon: Palette,
                         tabContent: (
-                          <div style={{overflowX: 'hidden'}}>
-                            <GridContainer justify="center">
-                              <GridItem xs={12} sm={12} md={4}>
-                                <img
-                                  alt="..."
-                                  src={work1}
-                                  className={navImageClasses}
-                                />
-                                <img
-                                  alt="..."
-                                  src={work2}
-                                  className={navImageClasses}
-                                />
-                                <img
-                                  alt="..."
-                                  src={work3}
-                                  className={navImageClasses}
-                                />
+                          <div style={{overflowX: 'hidden', overflowY: 'hidden'}}>
+                            <GridContainer justify="center" direct="column" spacing={40}>
+                              <GridItem
+                                xs={12}
+                                sm={12}
+                                md={12}
+                                className={classes.gridItem}
+                              >
+                                <Card profile plain className={classes.card}>
+                                  <GridContainer>
+                                    <GridItem xs={12} sm={12} md={5}>
+                                      <CardHeader image plain>
+                                        <a href="#pablo">
+                                          <img src={burgerBuilder} alt="..." />
+                                        </a>
+                                        <div
+                                          className={classes.coloredShadow}
+                                          style={{
+                                            backgroundImage: "url(" + burgerBuilder + ")",
+                                            opacity: "1"
+                                          }}
+                                        />
+                                      </CardHeader>
+                                    </GridItem>
+                                    <GridItem xs={12} sm={12} md={7}>
+                                      <CardBody plain>
+                                        <h4 className={classes.cardTitle}>
+                                          Burger Builder
+                                        </h4>
+                                        <Muted>
+                                          <h6>React, Redux</h6>
+                                        </Muted>
+                                        <p className={classes.description}>
+                                          Lightning fast and responsive React app for building and ordering custom burgers.
+                                          Order info and customer data all stored in a Firebase database.
+                                        </p>
+                                      </CardBody>
+                                    </GridItem>
+                                  </GridContainer>
+                                </Card>
                               </GridItem>
-                              <GridItem xs={12} sm={12} md={4}>
-                                <img
-                                  alt="..."
-                                  src={work4}
-                                  className={navImageClasses}
-                                />
-                                <img
-                                  alt="..."
-                                  src={work5}
-                                  className={navImageClasses}
-                                />
+                              <GridItem
+                                xs={12}
+                                sm={12}
+                                md={12}
+                                className={classes.gridItem}
+                              >
+                                <Card profile plain className={classes.card}>
+                                  <GridContainer>
+                                    <GridItem xs={12} sm={12} md={5}>
+                                      <CardHeader image plain>
+                                        <a href="#pablo">
+                                          <img src={faceRecognition} alt="..." />
+                                        </a>
+                                        <div
+                                          className={classes.coloredShadow}
+                                          style={{
+                                            backgroundImage: "url(" + faceRecognition + ")",
+                                            opacity: "1"
+                                          }}
+                                        />
+                                      </CardHeader>
+                                    </GridItem>
+                                    <GridItem xs={12} sm={12} md={7}>
+                                      <CardBody plain>
+                                        <h4 className={classes.cardTitle}>
+                                          Facial Recognition
+                                        </h4>
+                                        <Muted>
+                                          <h6>Node, PostgreSQL, React, Redux</h6>
+                                        </Muted>
+                                        <p className={classes.description}>
+                                          App that auto detects faces in photos by connecting to Clarafai's facial recognition API.
+                                          Complete with user login and register pages, with backend built on Node.js and database using PostgreSQL.
+                                        </p>
+                                      </CardBody>
+                                    </GridItem>
+                                  </GridContainer>
+                                </Card>
+                              </GridItem>
+                              <GridItem
+                                xs={12}
+                                sm={12}
+                                md={12}
+                                className={classes.gridItem}
+                              >
+                                <Card profile plain className={classes.card}>
+                                  <GridContainer>
+                                    <GridItem xs={12} sm={12} md={5}>
+                                      <CardHeader image plain>
+                                        <a href="#pablo">
+                                          <img src={robofriends} alt="..." />
+                                        </a>
+                                        <div
+                                          className={classes.coloredShadow}
+                                          style={{
+                                            backgroundImage: "url(" + robofriends + ")",
+                                            opacity: "1"
+                                          }}
+                                        />
+                                      </CardHeader>
+                                    </GridItem>
+                                    <GridItem xs={12} sm={12} md={7}>
+                                      <CardBody plain>
+                                        <h4 className={classes.cardTitle}>
+                                          Robofriends App
+                                        </h4>
+                                        <Muted>
+                                          <h6>React, Redux</h6>
+                                        </Muted>
+                                        <p className={classes.description}>
+                                          Quick and fun app retrieving a database of robots from a psuedo-backend using API calls.
+                                          Later rebuilt using redux, for learning purposes.
+                                        </p>
+                                      </CardBody>
+                                    </GridItem>
+                                  </GridContainer>
+                                </Card>
+                              </GridItem>
+                              <GridItem
+                                xs={12}
+                                sm={12}
+                                md={5}
+                                className={classes.gridItem}>
                               </GridItem>
                             </GridContainer>
                           </div>
@@ -453,7 +550,7 @@ class ProfilePage extends React.Component {
                       },
                       {
                         tabButton: "Work History",
-                        tabIcon: Favorite,
+                        tabIcon: LocationCity,
                         tabContent: (
                           <div style={{overflowX: 'hidden'}}>
                             <GridContainer justify="center">
@@ -497,7 +594,7 @@ class ProfilePage extends React.Component {
             </div>
           </div>
         </div>
-        <Footer />
+        <FooterClean />
       </div>
     );
   }

@@ -2,6 +2,9 @@ import { container, title } from "assets/jss/material-kit-react.jsx";
 
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx";
 
+import cardBodyStyle from "assets/jss/material-kit-react/components/cardBodyStyle.jsx";
+import cardStyle from "assets/jss/material-kit-react/components/cardStyle.jsx";
+
 const profilePageStyle = {
   container,
   profile: {
@@ -23,6 +26,8 @@ const profilePageStyle = {
     marginTop: "-80px"
   },
   ...imagesStyle,
+  ...cardBodyStyle,
+  ...cardStyle,
   main: {
     background: "#FFFFFF",
     position: "relative",

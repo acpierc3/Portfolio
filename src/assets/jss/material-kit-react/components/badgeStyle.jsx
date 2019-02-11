@@ -5,13 +5,14 @@ import {
   successColor,
   infoColor,
   roseColor
-} from "assets/jss/material-kit-react.jsx";
+} from "assets/jss/material-kit-pro-react.jsx";
 
 const badgeStyle = {
   badge: {
+    marginRight: "3px",
     borderRadius: "12px",
     padding: "5px 12px",
-    fontSize: "25px",
+    fontSize: "1em",
     fontWeight: "500",
     lineHeight: "1",
     color: "#fff",

@@ -1,12 +1,12 @@
 /*!
 
  =========================================================
- * Material Kit React - v1.3.0 based on Material Kit - v2.0.2
+ * Material Kit PRO React - v1.2.0 based on Material Kit PRO - v2.0.3
  =========================================================
 
- * Product Page: https://www.creative-tim.com/product/material-kit-react
+ * Product Page: https://www.creative-tim.com/product/material-kit-pro-react
  * Copyright 2018 Creative Tim (https://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
+ * Licensed under MIT (https://github.com/creativetimofficial/ct-material-kit-pro-react/blob/master/LICENSE.md)
 
  =========================================================
 
@@ -24,7 +24,7 @@ const transition = {
   transition: "all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)"
 };
 
-const conatinerFluid = {
+const containerFluid = {
   paddingRight: "15px",
   paddingLeft: "15px",
   marginRight: "auto",
@@ -32,7 +32,7 @@ const conatinerFluid = {
   width: "100%"
 };
 const container = {
-  ...conatinerFluid,
+  ...containerFluid,
   "@media (min-width: 576px)": {
     maxWidth: "540px"
   },
@@ -70,6 +70,7 @@ const defaultFont = {
 };
 
 const primaryColor = "#9c27b0";
+const secondaryColor = "#fafafa";
 const warningColor = "#ff9800";
 const dangerColor = "#f44336";
 const successColor = "#4caf50";
@@ -185,6 +186,58 @@ const cardSubtitle = {
   marginTop: "-.375rem"
 };
 
+const main = {
+  background: "#FFFFFF",
+  position: "relative",
+  zIndex: "3"
+};
+
+const mainRaised = {
+  "@media (max-width: 576px)": {
+    marginTop: "-30px"
+  },
+  "@media (max-width: 830px)": {
+    marginLeft: "10px",
+    marginRight: "10px"
+  },
+  margin: "-60px 30px 0px",
+  borderRadius: "6px",
+  boxShadow:
+    "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
+};
+
+const section = {
+  backgroundPosition: "50%",
+  backgroundSize: "cover"
+};
+
+const sectionDark = {
+  backgroundColor: "#343434",
+  background: "radial-gradient(ellipse at center,#585858 0,#232323 100%)"
+};
+
+const sectionDescription = {
+  marginTop: "130px"
+};
+
+const description = {
+  color: "#999"
+};
+
+const mlAuto = {
+  marginLeft: "auto"
+};
+
+const mrAuto = {
+  marginRight: "auto"
+};
+
+const btnLink = {
+  backgroundColor: "transparent",
+  boxShdow: "none",
+  marginTop: "5px",
+  marginBottom: "5px"
+};
 const coloredShadow = {
   // some jss/css to make the cards look a bit better on Internet Explorer
   "@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)": {
@@ -202,20 +255,17 @@ const coloredShadow = {
   opacity: "0"
 };
 
-const description = {
-  color: "#999"
-};
-
 export {
   //variables
   drawerWidth,
   transition,
   container,
-  conatinerFluid,
+  containerFluid,
   boxShadow,
   card,
   defaultFont,
   primaryColor,
+  secondaryColor,
   warningColor,
   dangerColor,
   successColor,
@@ -239,8 +289,16 @@ export {
   defaultBoxShadow,
   title,
   cardTitle,
+  description,
   cardLink,
   cardSubtitle,
-  coloredShadow,
-  description
+  main,
+  mainRaised,
+  section,
+  sectionDark,
+  sectionDescription,
+  mlAuto,
+  mrAuto,
+  btnLink,
+  coloredShadow
 };

@@ -4,8 +4,9 @@ import {
   infoColor,
   successColor,
   warningColor,
-  dangerColor
-} from "assets/jss/material-kit-react.jsx";
+  dangerColor,
+  roseColor
+} from "assets/jss/material-kit-pro-react.jsx";
 
 const typographyStyle = {
   defaultFontStyle: {
@@ -19,7 +20,7 @@ const typographyStyle = {
   quote: {
     padding: "10px 20px",
     margin: "0 0 20px",
-    fontSize: "17.5px",
+    fontSize: "1.25rem",
     borderLeft: "5px solid #eee"
   },
   quoteText: {
@@ -33,22 +34,46 @@ const typographyStyle = {
     color: "#777"
   },
   mutedText: {
-    color: "#777"
+    "&, & *": {
+      color: "#6c757d",
+      display: "inline-block"
+    }
   },
   primaryText: {
-    color: primaryColor
+    "&, & *": {
+      color: primaryColor,
+      display: "inline-block"
+    }
   },
   infoText: {
-    color: infoColor
+    "&, & *": {
+      color: infoColor,
+      display: "inline-block"
+    }
   },
   successText: {
-    color: successColor
+    "&, & *": {
+      color: successColor,
+      display: "inline-block"
+    }
   },
   warningText: {
-    color: warningColor
+    "&, & *": {
+      color: warningColor,
+      display: "inline-block"
+    }
   },
   dangerText: {
-    color: dangerColor
+    "&, & *": {
+      color: dangerColor,
+      display: "inline-block"
+    }
+  },
+  roseText: {
+    "&, & *": {
+      color: roseColor,
+      display: "inline-block"
+    }
   },
   smallText: {
     fontSize: "65%",
