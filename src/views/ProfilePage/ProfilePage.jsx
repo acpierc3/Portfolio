@@ -72,7 +72,7 @@ class ProfilePage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax small filter image={require("assets/img/bg.jpg")} />
+        <Parallax medium filter image={require("assets/img/bg3.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <div className={classes.container} >
@@ -552,36 +552,130 @@ class ProfilePage extends React.Component {
                         tabButton: "Work History",
                         tabIcon: LocationCity,
                         tabContent: (
-                          <div style={{overflowX: 'hidden'}}>
-                            <GridContainer justify="center">
-                              <GridItem xs={12} sm={12} md={4}>
-                                <img
-                                  alt="..."
-                                  src={work4}
-                                  className={navImageClasses}
-                                />
-                                <img
-                                  alt="..."
-                                  src={studio3}
-                                  className={navImageClasses}
-                                />
+                          <div style={{overflowX: 'hidden', overflowY: 'hidden'}}>
+                            <GridContainer justify="center" direct="column" spacing={40}>
+                              <GridItem
+                                xs={12}
+                                sm={12}
+                                md={12}
+                                className={classes.gridItem}
+                              >
+                                <Card profile plain className={classes.card}>
+                                  <GridContainer>
+                                    <GridItem xs={12} sm={12} md={5}>
+                                      <CardHeader image plain>
+                                        <a href="#pablo">
+                                          <img src={burgerBuilder} alt="..." />
+                                        </a>
+                                        <div
+                                          className={classes.coloredShadow}
+                                          style={{
+                                            backgroundImage: "url(" + burgerBuilder + ")",
+                                            opacity: "1"
+                                          }}
+                                        />
+                                      </CardHeader>
+                                    </GridItem>
+                                    <GridItem xs={12} sm={12} md={7}>
+                                      <CardBody plain>
+                                        <h4 className={classes.cardTitle}>
+                                          Burger Builder
+                                        </h4>
+                                        <Muted>
+                                          <h6>React, Redux</h6>
+                                        </Muted>
+                                        <p className={classes.description}>
+                                          Lightning fast and responsive React app for building and ordering custom burgers.
+                                          Order info and customer data all stored in a Firebase database.
+                                        </p>
+                                      </CardBody>
+                                    </GridItem>
+                                  </GridContainer>
+                                </Card>
                               </GridItem>
-                              <GridItem xs={12} sm={12} md={4}>
-                                <img
-                                  alt="..."
-                                  src={work2}
-                                  className={navImageClasses}
-                                />
-                                <img
-                                  alt="..."
-                                  src={work1}
-                                  className={navImageClasses}
-                                />
-                                <img
-                                  alt="..."
-                                  src={studio1}
-                                  className={navImageClasses}
-                                />
+                              <GridItem
+                                xs={12}
+                                sm={12}
+                                md={12}
+                                className={classes.gridItem}
+                              >
+                                <Card profile plain className={classes.card}>
+                                  <GridContainer>
+                                    <GridItem xs={12} sm={12} md={5}>
+                                      <CardHeader image plain>
+                                        <a href="#pablo">
+                                          <img src={faceRecognition} alt="..." />
+                                        </a>
+                                        <div
+                                          className={classes.coloredShadow}
+                                          style={{
+                                            backgroundImage: "url(" + faceRecognition + ")",
+                                            opacity: "1"
+                                          }}
+                                        />
+                                      </CardHeader>
+                                    </GridItem>
+                                    <GridItem xs={12} sm={12} md={7}>
+                                      <CardBody plain>
+                                        <h4 className={classes.cardTitle}>
+                                          Facial Recognition
+                                        </h4>
+                                        <Muted>
+                                          <h6>Node, PostgreSQL, React, Redux</h6>
+                                        </Muted>
+                                        <p className={classes.description}>
+                                          App that auto detects faces in photos by connecting to Clarafai's facial recognition API.
+                                          Complete with user login and register pages, with backend built on Node.js and database using PostgreSQL.
+                                        </p>
+                                      </CardBody>
+                                    </GridItem>
+                                  </GridContainer>
+                                </Card>
+                              </GridItem>
+                              <GridItem
+                                xs={12}
+                                sm={12}
+                                md={12}
+                                className={classes.gridItem}
+                              >
+                                <Card profile plain className={classes.card}>
+                                  <GridContainer>
+                                    <GridItem xs={12} sm={12} md={5}>
+                                      <CardHeader image plain>
+                                        <a href="#pablo">
+                                          <img src={robofriends} alt="..." />
+                                        </a>
+                                        <div
+                                          className={classes.coloredShadow}
+                                          style={{
+                                            backgroundImage: "url(" + robofriends + ")",
+                                            opacity: "1"
+                                          }}
+                                        />
+                                      </CardHeader>
+                                    </GridItem>
+                                    <GridItem xs={12} sm={12} md={7}>
+                                      <CardBody plain>
+                                        <h4 className={classes.cardTitle}>
+                                          Robofriends App
+                                        </h4>
+                                        <Muted>
+                                          <h6>React, Redux</h6>
+                                        </Muted>
+                                        <p className={classes.description}>
+                                          Quick and fun app retrieving a database of robots from a psuedo-backend using API calls.
+                                          Later rebuilt using redux, for learning purposes.
+                                        </p>
+                                      </CardBody>
+                                    </GridItem>
+                                  </GridContainer>
+                                </Card>
+                              </GridItem>
+                              <GridItem
+                                xs={12}
+                                sm={12}
+                                md={5}
+                                className={classes.gridItem}>
                               </GridItem>
                             </GridContainer>
                           </div>

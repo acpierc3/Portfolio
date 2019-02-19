@@ -4,6 +4,7 @@ import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx";
 
 import cardBodyStyle from "assets/jss/material-kit-react/components/cardBodyStyle.jsx";
 import cardStyle from "assets/jss/material-kit-react/components/cardStyle.jsx";
+import parallaxStyle from "assets/jss/material-kit-react/components/parallaxStyle.jsx";
 
 const profilePageStyle = {
   container,
@@ -28,6 +29,7 @@ const profilePageStyle = {
   ...imagesStyle,
   ...cardBodyStyle,
   ...cardStyle,
+  ...parallaxStyle,
   main: {
     background: "#FFFFFF",
     position: "relative",
