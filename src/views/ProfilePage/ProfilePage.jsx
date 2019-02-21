@@ -26,12 +26,12 @@ import Badge from "components/Badge/Badge.jsx";
 import Muted from "components/Typography/Muted.jsx";
 
 import profile from "assets/img/faces/adam2.png";
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
+// import studio1 from "assets/img/examples/studio-1.jpg";
+// import studio3 from "assets/img/examples/studio-3.jpg";
+// import work1 from "assets/img/examples/olu-eletu.jpg";
+// import work2 from "assets/img/examples/clem-onojeghuo.jpg";
 // import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
+// import work4 from "assets/img/examples/mariya-georgieva.jpg";
 // import work5 from "assets/img/examples/clem-onojegaw.jpg";
 import robofriends from "assets/img/examples/projects/robofriends.png";
 import burgerBuilder from "assets/img/examples/projects/burgerBuilder.png";
@@ -47,6 +47,7 @@ import redux from "assets/img/examples/logos/redux.png";
 import git from "assets/img/examples/logos/git.png";
 import deltav from "assets/img/examples/logos/deltav.png";
 import info from "assets/img/examples/logos/info.png";
+import zenith from "assets/img/examples/logos/zenith.png";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
@@ -562,27 +563,20 @@ class ProfilePage extends React.Component {
                               >
                                 <Card profile plain className={classes.card}>
                                   <GridContainer>
-                                    <GridItem xs={12} sm={12} md={5}>
+                                    <GridItem xs={5} sm={5} md={5}>
                                       <CardHeader image plain>
                                         <a href="#pablo">
-                                          <img src={burgerBuilder} alt="..." />
+                                          <img src={zenith} alt="zenith" width="50" />
                                         </a>
-                                        <div
-                                          className={classes.coloredShadow}
-                                          style={{
-                                            backgroundImage: "url(" + burgerBuilder + ")",
-                                            opacity: "1"
-                                          }}
-                                        />
                                       </CardHeader>
                                     </GridItem>
-                                    <GridItem xs={12} sm={12} md={7}>
+                                    <GridItem xs={7} sm={7} md={7}>
                                       <CardBody plain>
                                         <h4 className={classes.cardTitle}>
-                                          Burger Builder
+                                          Zenith Technologies
                                         </h4>
                                         <Muted>
-                                          <h6>React, Redux</h6>
+                                          <h6>2015-2018</h6>
                                         </Muted>
                                         <p className={classes.description}>
                                           Lightning fast and responsive React app for building and ordering custom burgers.
