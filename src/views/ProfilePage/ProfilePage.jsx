@@ -61,7 +61,7 @@ class ProfilePage extends React.Component {
       classes.imgRoundedCircle,
       classes.imgFluid
     );
-    const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+    
     return (
       <div>
         <Header
@@ -434,16 +434,9 @@ class ProfilePage extends React.Component {
                                   <GridContainer>
                                     <GridItem xs={12} sm={12} md={5}>
                                       <CardHeader image plain>
-                                        <a href="#pablo">
+                                        <a href="https://sandwich-builder.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                           <img src={burgerBuilder} alt="..." />
                                         </a>
-                                        <div
-                                          className={classes.coloredShadow}
-                                          style={{
-                                            backgroundImage: "url(" + burgerBuilder + ")",
-                                            opacity: "1"
-                                          }}
-                                        />
                                       </CardHeader>
                                     </GridItem>
                                     <GridItem xs={12} sm={12} md={7}>
@@ -473,16 +466,9 @@ class ProfilePage extends React.Component {
                                   <GridContainer>
                                     <GridItem xs={12} sm={12} md={5}>
                                       <CardHeader image plain>
-                                        <a href="#pablo">
+                                        <a href="https://apierce-facerecognition.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                           <img src={faceRecognition} alt="..." />
                                         </a>
-                                        <div
-                                          className={classes.coloredShadow}
-                                          style={{
-                                            backgroundImage: "url(" + faceRecognition + ")",
-                                            opacity: "1"
-                                          }}
-                                        />
                                       </CardHeader>
                                     </GridItem>
                                     <GridItem xs={12} sm={12} md={7}>
