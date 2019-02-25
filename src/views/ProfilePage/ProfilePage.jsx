@@ -491,16 +491,9 @@ class ProfilePage extends React.Component {
                                   <GridContainer>
                                     <GridItem xs={12} sm={12} md={5}>
                                       <CardHeader image plain>
-                                        <a href="#pablo">
+                                        <a href="https://apierce-robofriends.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                           <img src={robofriends} alt="..." />
                                         </a>
-                                        <div
-                                          className={classes.coloredShadow}
-                                          style={{
-                                            backgroundImage: "url(" + robofriends + ")",
-                                            opacity: "1"
-                                          }}
-                                        />
                                       </CardHeader>
                                     </GridItem>
                                     <GridItem xs={12} sm={12} md={7}>
