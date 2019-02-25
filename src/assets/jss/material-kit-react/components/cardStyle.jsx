@@ -24,6 +24,9 @@ const cardStyle = {
     background: "transparent",
     boxShadow: "none"
   },
+  cardTitle: {
+    textAlign: "left"
+  },
   cardProfile: {
     marginTop: "30px",
     textAlign: "center"
