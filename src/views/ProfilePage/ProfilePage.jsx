@@ -26,13 +26,6 @@ import Badge from "components/Badge/Badge.jsx";
 import Muted from "components/Typography/Muted.jsx";
 
 import profile from "assets/img/faces/adam2.png";
-// import studio1 from "assets/img/examples/studio-1.jpg";
-// import studio3 from "assets/img/examples/studio-3.jpg";
-// import work1 from "assets/img/examples/olu-eletu.jpg";
-// import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-// import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-// import work4 from "assets/img/examples/mariya-georgieva.jpg";
-// import work5 from "assets/img/examples/clem-onojegaw.jpg";
 import robofriends from "assets/img/examples/projects/robofriends.png";
 import burgerBuilder from "assets/img/examples/projects/burgerBuilder.png";
 import faceRecognition from "assets/img/examples/projects/faceRecognition.png";
