@@ -9,6 +9,8 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
+import resume from "assets/Pierce_Resume_25FEB19.pdf";
+
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
 
@@ -23,7 +25,7 @@ function HeaderLinks({ ...props }) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
-          href=""
+          href={resume}
           color="transparent"
           target="_blank"
           className={classes.navLink}

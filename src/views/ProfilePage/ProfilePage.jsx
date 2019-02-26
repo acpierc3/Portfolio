@@ -416,6 +416,7 @@ class ProfilePage extends React.Component {
                         tabIcon: Palette,
                         tabContent: (
                           <div style={{overflowX: 'hidden', overflowY: 'hidden'}}>
+                          <Muted><p>Note that since the Apps are hosted by Heroku, they will take a few seconds to load initially</p></Muted>
                             <GridContainer justify="center" direct="column" spacing={40}>
                               <GridItem
                                 xs={12}
