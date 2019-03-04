@@ -96,7 +96,7 @@ class ProfilePage extends React.Component {
               </GridContainer >
               <div className={classes.description}>
                 <p>
-                A software engineer with extensive experience in industrial automation, trained in web development.{" "}
+                A software engineer with extensive experience in industrial automation software, trained in web development.{" "}
                 </p>
               </div>
               <GridContainer justify="center" >
