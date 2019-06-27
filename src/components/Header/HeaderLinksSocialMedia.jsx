@@ -9,7 +9,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
-import resume from "assets/Pierce_Resume_02MAR19.pdf";
+import resume from "assets/Pierce_Resume_26JUN19.pdf";
 
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
