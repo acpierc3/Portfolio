@@ -540,7 +540,7 @@ class ProfilePage extends React.Component {
                                   <GridContainer>
                                     <GridItem xs={4} sm={4} md={4}>
                                       <CardHeader image plain>
-                                        <a href="#pablo">
+                                      <a href="https://www.zenithtechnologies.com/" target="_blank" rel="noopener noreferrer">
                                           <img src={zenith} alt="zenith" width="50" />
                                         </a>
                                       </CardHeader>
@@ -553,7 +553,7 @@ class ProfilePage extends React.Component {
                                         <h6>2015-2018</h6>
                                         <Muted>
                                           <p>
-                                            Automation Engineer working on software for Genentech's new Purification Suite
+                                            Automation SoftwareEngineer working on Genentech's new Purification Suite software
                                             through design, implementation, and testing stages.
                                           </p>
                                         </Muted>
@@ -572,7 +572,7 @@ class ProfilePage extends React.Component {
                                   <GridContainer>
                                     <GridItem xs={4} sm={4} md={4}>
                                       <CardHeader image plain>
-                                        <a href="#pablo">
+                                      <a href="https://remason.com/" target="_blank" rel="noopener noreferrer">
                                           <img src={remason} alt="r.e. mason" width="50" />
                                         </a>
                                       </CardHeader>
@@ -585,7 +585,7 @@ class ProfilePage extends React.Component {
                                         <h6>2011-2015</h6>
                                         <Muted>
                                           <p>
-                                            Automation Engineer working on various capital projects for clients including
+                                            Automation Software Engineer working on various capital projects for clients including
                                             Biogen, Mallinckrodt Pharmaceuticals, Grifols, Weyerhaeuser.
                                           </p>
                                         </Muted>
@@ -604,7 +604,7 @@ class ProfilePage extends React.Component {
                                   <GridContainer>
                                     <GridItem xs={4} sm={4} md={4}>
                                       <CardHeader image plain>
-                                        <a href="#pablo">
+                                      <a href="https://www.ncsu.edu/" target="_blank" rel="noopener noreferrer">
                                           <img src={ncstate} alt="n.c. state" width="1" />
                                         </a>
                                       </CardHeader>
